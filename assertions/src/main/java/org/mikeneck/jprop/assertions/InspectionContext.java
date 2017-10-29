@@ -15,15 +15,13 @@
  */
 package org.mikeneck.jprop.assertions;
 
-class AssertionSuccess implements AssertionResult {
+public interface InspectionContext {
 
-    @Override
-    public boolean isSucceeded() {
-        return true;
-    }
+    String getPropertyDescription();
 
-    @Override
-    public String getMessage() {
-        return "succeeded";
-    }
+    String getFileName();
+
+    String getClassName();
+
+    String getMethodName();
 }

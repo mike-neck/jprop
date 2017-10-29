@@ -15,14 +15,14 @@
  */
 package org.mikeneck.jprop.assertions;
 
-public class AssertionFail implements AssertionResult {
+public class InspectionFail implements InspectionResult {
 
     private static final String SEPARATOR = System.lineSeparator();
 
-    private final AssertionContext context;
+    private final InspectionContext context;
     private final Comparison comparison;
 
-    public AssertionFail(final AssertionContext context, final Comparison comparison) {
+    public InspectionFail(final InspectionContext context, final Comparison comparison) {
         this.context = context;
         this.comparison = comparison;
     }

@@ -13,11 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.mikeneck.jprop;
+package org.mikeneck.jprop.assertions;
 
-public class Assert<T> {
+class InspectionSuccess implements InspectionResult {
 
-    public void check() {
-        
+    @Override
+    public boolean isSucceeded() {
+        return true;
+    }
+
+    @Override
+    public String getMessage() {
+        return "succeeded";
     }
 }

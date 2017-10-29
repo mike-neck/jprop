@@ -15,7 +15,7 @@
  */
 package org.mikeneck.jprop.assertions;
 
-public interface AssertionResult {
+public interface InspectionResult {
 
     boolean isSucceeded();
 

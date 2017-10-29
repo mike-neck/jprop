@@ -13,15 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.mikeneck.jprop.assertions;
+package org.mikeneck.jprop;
 
-public interface AssertionContext {
+import org.mikeneck.jprop.assertions.InspectionResult;
 
-    String getPropertyDescription();
+public interface Assertion<T> {
 
-    String getFileName();
-
-    String getClassName();
-
-    String getMethodName();
+    InspectionResult examine();
 }
