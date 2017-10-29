@@ -13,11 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.mikeneck.jprop;
+package org.mikeneck.jprop.assertions;
 
-import org.mikeneck.jprop.assertions.InspectionResult;
+import org.mikeneck.jprop.Assertion;
 
-public interface Assertion {
+public interface BooleanAssertion {
 
-    InspectionResult examine();
+    Assertion is(final boolean expected);
+
+    Assertion isTrue();
+
+    Assertion isFalse();
 }
